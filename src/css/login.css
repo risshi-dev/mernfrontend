@@ -1,0 +1,124 @@
+.loginContainer{
+
+    margin: 3vh auto;
+    height: 60vh;
+    width: 330px;
+   
+}
+
+.loginLogin{
+    height:50vh;
+}
+
+.shippingform{
+    height:75vh;
+}
+
+label{
+    font-size:14px;
+}
+
+.loginInput{
+    width: 280px;
+    padding: 12px 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 7px 8px 10px #eff2f7, 2px 3px 10px #eeeeee inset;
+}
+
+.loginInput:focus{
+    outline: none;
+}
+
+
+.loginSubmit{
+    color: #fff;
+    font-weight: 200;
+    font-size: 18px;
+    letter-spacing: 2px;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 12px 25px;
+    border: none;
+    background-color: #007bff;
+    transition: 0.2s ease-in;
+}
+
+
+.loginSubmit:hover{
+    background-color: #0075f2;
+}
+
+.loginForm{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+ background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 9px 12px 10px #eff2f7, 2px 3px 10px #eeeeee inset;
+    transition: 0.3s ease-in;
+}
+
+.headingContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading{
+    color: #0b81ff;
+    width: fit-content;
+    margin: 0px 10px 20px 10px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    font-size: 2rem;
+}
+.slash{
+    color: #0b81ff;
+    width: fit-content;
+    margin: 0px 10px 20px 10px;
+    font-weight: 800;
+    cursor: default;
+    transition: 0.3s ease-in;
+    font-size: 2.2rem;
+}
+
+
+.active{
+    margin: 0px 10px 20px 10px;
+    font-size: 14px;
+}
+
+.heading:hover,.slash:hover{
+    color:#0072ec
+}
+
+@media only screen and (max-width:500px){
+      .loginContainer{
+          height:70vh;
+
+      }
+      .loginLogin{
+          height: 60vh;
+      }
+      .shippingform{
+        height:75vh;
+    }
+    
+}
+
+@media only screen and (max-width:350px){
+      .loginContainer{
+          width:93vw;
+
+      }
+      .loginLogin{
+          width: 93vw;
+      }
+      .loginInput{
+          width: 85vw;
+      }
+}

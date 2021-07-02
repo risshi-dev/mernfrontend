@@ -1,0 +1,118 @@
+a{
+    color: #000;
+}
+a:hover{
+    color: #000;
+}
+.cartImage{
+    width:150px;
+     border-radius:8px;
+    border: 1px solid #d7d7d7;;
+}
+.cartItemContainer{
+    margin: 20px 0px;
+    overflow-x: auto;
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    box-shadow: 9px 12px 10px #eff2f7;
+    padding: 10px;
+}
+
+
+.cartContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.orderSummary{
+    padding:20px;
+    height: fit-content;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 9px 12px 10px #eff2f7;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+.orderSummary>div{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.ordertableContainer{
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 9px 12px 10px #eff2f7;
+    margin: 10px 0px;
+}
+
+.orderTable{
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 9px 12px 10px #eff2f7;
+    margin: 10px auto;
+    width: 90vw;
+    height: 60vh;
+    overflow: auto;
+}
+
+
+.allOrders{
+    background-color: #fff;
+    box-shadow: 9px 12px 10px #eff2f7;
+    padding: 20px;
+    color: #007bff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.allOrderContainer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 9px 12px 10px #eff2f7;
+    padding: 20px;
+    color: #007bff;
+    padding: 20px;
+    border-radius: 5px;
+    margin:15px auto;
+}
+
+.allOrderContainer>div{
+    width: 30vw;
+    text-align: center;
+}
+
+.orderContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width:800px){
+    .cartItemContainer{
+        width:85vw;
+    letter-spacing: 5px;
+    margin:20px auto
+}
+.cartItemContainer>*{
+    margin:0px 10px;
+}
+.ordertableContainer{
+    /* width:50vw; */
+}
+.orderSummary{
+    width: 95vw;
+    margin:20px 0px;
+}
+
+}

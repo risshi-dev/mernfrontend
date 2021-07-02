@@ -1,0 +1,1 @@
+export const baseDomain = 'https://mernshopapi.herokuapp.com/api' 
