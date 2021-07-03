@@ -44,11 +44,11 @@ function ProductPageRight({product, history}) {
 								</div>
 
 								<div className="prdouct-page-desc-details" id="product-page-rating">
-									<span className="product-page-span-desc">Rating</span>
-									<div style={{ margin: "10px 0px" }}>
-										<Star value={product.rating} />
+									<span className="product-page-span-desc">Rating ({product.numReviews} Reviews)</span>
+									<div style={{ margin: "10px 0px", display:'flex', alignItems:'center' }}>
+										<Star value={product.rating} /> <div style={{ margin: "0px 5px", fontWeight:'100' }}>{product.rating}/5</div>
 									</div>
-									<div style={{ margin: "10px 0px", fontWeight:'500' }}>{product.numReviews} Reviews</div>
+									
 									{
 										product.reviews?.map( review => <div className='reviews' >
 											{review.name}

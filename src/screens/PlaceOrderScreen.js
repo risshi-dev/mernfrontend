@@ -4,6 +4,7 @@ import { withRouter } from 'react-router-dom';
 import { cartDetails, clearCart } from '../actions/cartAction';
 import { createOrder, createRazorPayOrder, PayOrder } from '../actions/orderActions';
 import PlaceOrderCart from '../components/PlaceOrderCart';
+import EditIcon from '@material-ui/icons/Edit';
 import '../css/placeOrder.css'
 function PlaceOrderScreen({history}) {
 
@@ -93,22 +94,22 @@ function PlaceOrderScreen({history}) {
     return (
         <div className="orderContainer">
             <div><div className="ordertableContainer">
-							<h4 style={{ color: "#007bff" }}>Shipping</h4>
-								<div>{shipping.address}</div>
+							<h4 className='subheadings'>Shipping</h4>
+								<div className='placeOrderEdit'><div>{shipping.address}</div> <a href='/shipping'><EditIcon style={{ color: "#007bff", cursor:'pointer' }}/> </a></div>
 						</div>
                         <div className="ordertableContainer">
-							<h4 style={{ color: "#007bff" }}>Payment Method</h4>
+							<h4 className='subheadings'>Payment Method</h4>
 								<div>{payment === "Razorpay" ? 'Razorpay' : payment}</div>
 						</div>
 						<div className="ordertableContainer">
-							<h4 style={{ color: "#007bff" }}>Order Items</h4>
+							<h4 className='subheadings'>Order Items</h4>
 							{
 								cart.map((item, i) => <PlaceOrderCart item={item} key={i} />)
                             }
 						</div></div>
                         
 						<div className="orderSummary">
-							<h3 style={{ color: "#007bff" }}>
+							<h3 className='subheadings'>
 								Order Summary 
 							</h3>
                             {/* <div>

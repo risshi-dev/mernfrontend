@@ -5,3 +5,12 @@
     grid-column-gap: 25px;
     grid-row-gap: 40px;
 }
+
+.homeHeading{
+    color: #0b81ff;
+    width: fit-content;
+    margin: 15px 0px;
+    font-weight: 100;
+    transition: 0.3s ease-in;
+    font-size: 1.5rem;
+}

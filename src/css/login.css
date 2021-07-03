@@ -23,7 +23,8 @@ label{
     padding: 12px 10px;
     border: none;
     border-radius: 5px;
-    box-shadow: 7px 8px 10px #eff2f7, 2px 3px 10px #eeeeee inset;
+    box-shadow: 7px 8px 10px #eff2f7;
+    border: 0.5px solid #eee;
 }
 
 .loginInput:focus{

@@ -19,6 +19,7 @@ h1{font-size: 2rem;}
 .headerRight{
     display: flex;
     flex-wrap: wrap;
+    align-items: baseline;
 }
 
 
@@ -91,4 +92,13 @@ h1{font-size: 2rem;}
 }
 .paymentContainer>input{
     margin-right: 10px;
+}
+
+
+@media only screen and (max-width:960px){
+
+    .form-imput{
+        width: 196px;
+        margin: 0;
+    }
 }

@@ -32,9 +32,13 @@ export default function Header(props) {
       }
     };
   });
+
+
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
+
+
   const headerColorChange = () => {
     const { color, changeColorOnScroll } = props;
     const windowsScrollTop = window.pageYOffset;
@@ -54,14 +58,22 @@ export default function Header(props) {
         .classList.remove(classes[changeColorOnScroll.color]);
     }
   };
+
+
   const { color, rightLinks, leftLinks, brand, fixed, absolute } = props;
+  
+  
   const appBarClasses = classNames({
     [classes.appBar]: true,
     [classes[color]]: color,
     [classes.absolute]: absolute,
     [classes.fixed]: fixed,
   });
+  
+  
   const brandComponent = <a href ='/' className={classes.title}>{brand}</a>;
+  
+  
   return (
     <AppBar className={appBarClasses}>
       <Toolbar className={classes.container}>

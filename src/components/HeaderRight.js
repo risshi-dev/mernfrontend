@@ -24,7 +24,7 @@ function HeaderRight({history}) {
         <div className='headerRight'>
         <Nav to='/cart' className="cart-container">
 									<Link to='/cart'>	
-									<ShoppingCartIcon style={{ color: "#007bff" , marginRight:'25px'}} />
+									<ShoppingCartIcon style={{ color: "#007bff" , marginRight: isLoggedIn ? '0px' : '15px'}} />
 									</Link></Nav>	
 									
 									

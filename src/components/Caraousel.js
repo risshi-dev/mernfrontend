@@ -15,7 +15,7 @@ function Caraousel({history}) {
 
     return (
       <div className='product-container'>
-          <div>Top Products Today</div>
+          <div className='homeHeading'>Top Products Today</div>
         <Carousel fade>   {topProducts && topProducts.map( product => {return (
                <Carousel.Item>
     <img

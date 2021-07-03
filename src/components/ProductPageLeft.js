@@ -14,7 +14,7 @@ function ProductPageLeft({product, match, history}) {
     }
 	const buyNow = () =>{
 		dispatch(cartDetails(id, quantity))
-		history.push('/shipping')
+		history.push('/login?redirect=shipping')
 }
     return (   
 					<div>

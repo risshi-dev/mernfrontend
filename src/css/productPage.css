@@ -30,6 +30,7 @@
     margin: 3px 0px;
     border-radius: 5px;
     background-color: #fff;
+    font-weight: 100;
     box-shadow: 8px 5px 10px #eff2f7;
 }
 
@@ -83,6 +84,7 @@
     background-color: #007bff;
     color: #fff;
     border-radius: 8px;
+    font-weight: 200;
 }
 
 .select-btn{

@@ -28,3 +28,15 @@ code {
     top: 30vh;
     z-index: 1000;
 }
+
+.subheadings{
+  color: #007bff;
+   font-weight:200;
+  }
+
+footer{
+    text-align: center;
+    margin: 20px auto;
+    padding: 25px 0px;
+
+}

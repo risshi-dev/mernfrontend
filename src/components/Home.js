@@ -1,17 +1,19 @@
 import React from 'react'
-import Footer from "./Footer";
 import Caraousel from './Caraousel'
 import HomeScreen from "../screens/HomeScreen";
+import Footer from './Footer'
 function Home() {
 
 	
 
-    return (
+    return (<>
 					<div className="padding">
 						<Caraousel />
 						<HomeScreen />
 						<Footer />
 					</div>
+					
+					</>
 				);
 }
 

@@ -1,10 +1,7 @@
 import React from 'react'
 
 const Footer = () => {
-    return <footer
-    style={{
-       margin:'20px auto' 
-    }}>
+    return <footer>
         Copyright © MernShop</footer>;
 }
 

@@ -25,7 +25,7 @@ function OrderScreen() {
     return (
 					<div className='padding'>
 						<div>
-							<h4 style={{ color: "#007bff" }}>All Orders</h4>
+							<div className='heading' style={{fontWeight:'200', padding:'0px 20px'}}>All Orders</div>
 						</div>
 						{/* <h5>Latest Products</h5> */}
 						{loading ? (

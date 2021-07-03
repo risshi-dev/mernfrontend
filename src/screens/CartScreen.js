@@ -27,7 +27,7 @@ const handleCheckout = () => {
     return (
 					<div className="cartContainer">
 						<div className="tableContainer">
-							<h1 style={{ color: "#007bff" }}>Shopping cart</h1>
+							<div className='heading' style={{fontWeight:'200', padding:'0px 20px'}}>Shopping cart</div>
 							{cart.length !== 0 ? (
 								cart.map((item, i) => <CartItem item={item} key={i} qty={qty} />)
 							) : (
@@ -37,10 +37,10 @@ const handleCheckout = () => {
 							)}
 						</div>
 						<div className="cartTotal">
-							<h3>
+							<h3 style={{fontWeight:'200'}}>
 								Cart Subtotal {cart.reduce((acc, item) => acc + item.qty * 1, 0)} Items
 							</h3>
-							<h5 style={{ color: "#007bff" }}>
+							<h5 className='subheadings'>
 								₹{cart.reduce((acc, item) => acc + item.qty * parseInt(item.price), 0).toFixed(2)}
 							</h5>
 							<div>

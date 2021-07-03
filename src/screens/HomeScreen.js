@@ -26,7 +26,7 @@ function HomeScreen() {
 						{ error && <AlertMess error={error} variant='danger'/>} 
 						{products &&
 							<div className="product-container">
-								<div>Deal of the Day</div>
+								<div className='homeHeading'>Deal of the Day</div>
 								<div className='productsgrid'>
 									{
 									products?.map((product, index) => (

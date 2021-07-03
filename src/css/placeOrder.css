@@ -98,6 +98,11 @@ a:hover{
     justify-content: space-evenly;
 }
 
+.placeOrderEdit{
+    display: flex;
+    justify-content: space-between;
+}
+
 @media only screen and (max-width:800px){
     .cartItemContainer{
         width:85vw;
