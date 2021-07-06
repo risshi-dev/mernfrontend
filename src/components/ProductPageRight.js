@@ -17,9 +17,7 @@ function ProductPageRight({product, history}) {
 	const dispatch = useDispatch()
 
 	const handleReview = (e) =>{
-		e.preventDefault()
-		console.log(review)
-		// dispatch(addReview({...review, id:product._id}))
+		dispatch(addReview({...review, id:product._id}))
 		setReview({
 			rating:"",
 			comment:""
