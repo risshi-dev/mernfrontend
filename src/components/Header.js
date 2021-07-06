@@ -15,12 +15,17 @@ import Drawer from "@material-ui/core/Drawer";
 import Menu from "@material-ui/icons/Menu";
 // core components
 import styles from "./headerStyle";
+import HeaderDrawerRes from "./HeaderDrawerRes";
+import { useLocation, useParams } from "react-router-dom";
 
 const useStyles = makeStyles(styles);
 
 export default function Header(props) {
   const classes = useStyles();
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  const {search} = useLocation()
+  const params = useParams()
   
   useEffect(() => {
     if (props.changeColorOnScroll) {
@@ -37,6 +42,11 @@ export default function Header(props) {
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
+
+  useEffect(()=>{
+    if(mobileOpen)
+         handleDrawerToggle()
+  },[search, params])
 
 
   const headerColorChange = () => {
@@ -112,7 +122,9 @@ export default function Header(props) {
         >
           <div className={classes.appResponsive}>
             {leftLinks}
-            {rightLinks}
+            {/* {rightLinks} */}
+           <HeaderDrawerRes />
+                                                 
           </div>
         </Drawer>
       </Hidden>

@@ -14,7 +14,7 @@ function HeaderRight({history}) {
 
 
 	const logOut = (e) => {
-		console.log('logout')
+		//console.log('logout')
 		e.preventDefault()
 		dispatch(userLogout())
 

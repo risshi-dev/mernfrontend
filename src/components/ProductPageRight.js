@@ -25,6 +25,8 @@ function ProductPageRight({product, history}) {
 
 	}
 
+	const rating = [{R:'Worst', value: 1}, {R:'Average', value: 2}, {R:'Good', value: 3}, {R:'Best', value: 4}, {R:'Excellent', value: 5}]
+
     return (
 					<div>
 						<div>
@@ -65,18 +67,22 @@ function ProductPageRight({product, history}) {
 					<div className="prdouct-page-desc-details">
 			            <div>Write a review</div>
 				        <form className="reviewForm" onSubmit={handleReview} >
-						<div>
+						<div id='rating'> 
 							<label>Rating</label>
 							<br />
-							<input
-								name="rating"
+							<select
+							    name="rating"
 								value={review.rating}
-								className="reviewInput"
+								className="select-btn"
+								style={{width:'110px'}}
 								type="text"
 								placeholder="Rating"
 								required
 								onChange={(e) => setReview({...review, rating: e.target.value})}
-							/>
+							>
+											{rating.map(r => <option vaule={r.value}>{r.R}</option>)}
+										</select>
+							
 						</div>
 						<div>
 							<label>Comment</label>
@@ -102,7 +108,7 @@ function ProductPageRight({product, history}) {
                   
 				  : 
 				  
-		      <div className="prdouct-page-desc-details">
+		      <div className="prdouct-page-desc-details" style={{textAlign:'center'}}>
 				  <button className="loginSubmit" onClick={()=> history.push('/login')} >
 					  Login To Review
 				  </button>

@@ -27,7 +27,7 @@ export const productByKey = (key) => async (dispatch) => {
 
 		const { data } = await axios.get(`${baseDomain}/products/search?key=${key}`);
 
-		console.log(data)
+		//console.log(data)
 
 		dispatch({
 			type: "PRODUCT_BY_ID_SUCCESS",

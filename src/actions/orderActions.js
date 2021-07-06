@@ -16,7 +16,7 @@ export const createRazorPayOrder = (order) => async (dispatch, getState) => {
                  }
              }
 
-       console.log({...order, user: user._id})
+       //console.log({...order, user: user._id})
 
     const { data } = await axios.post(`${baseDomain}/orders/create_order_razorpay`,{...order, user: user._id},config);
     
@@ -52,7 +52,7 @@ export const createOrder = (order) => async (dispatch, getState) => {
                      }
                  }
 
-           console.log({...order, user: user._id})
+           //console.log({...order, user: user._id})
 
         const { data } = await axios.post(`${baseDomain}/orders/create_order`,{...order, user: user._id},config);
         
@@ -114,7 +114,7 @@ export const fetchAllOrders =()=>async (dispatch, getState)=>{
  export const fetchOrderById = (id) => async (dispatch, getState)=>{
 
     try {
-        console.log('hit it')
+        //console.log('hit it')
                  dispatch({ type: "ORDER_BY_ID_REQUEST" });
 
                  const { auth : {user} } = getState()
@@ -162,7 +162,7 @@ export const fetchAllOrders =()=>async (dispatch, getState)=>{
                  }
              }
 
-       console.log(id)
+       //console.log(id)
 
     const { data } = await axios.post(`${baseDomain}/orders/orderPaid/${id}`,paymentDetails,config);
     
@@ -187,7 +187,7 @@ export const getPayPalId = () => async (dispatch) => {
 
 try{
     const { data } = await axios.get(`${baseDomain}/payment_settings`);
-    console.log(data)
+    //console.log(data)
     dispatch({
         type:'RAZORPAY_ID_SUCCESS',
         payload:data

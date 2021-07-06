@@ -16,7 +16,7 @@ function ProfileScreen() {
 //     },[dispatch, isLoggedin])
 
     return (
-        <div style={{display:'flex'}}>
+        <div className='cartContainer'>
 
             <ProfileRight />
             <ProfileLeft />

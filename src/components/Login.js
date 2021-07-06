@@ -16,7 +16,7 @@ function  Login({history, location}) {
 
 				useEffect(()=>{
 
-					console.log(redirect)
+					//console.log(redirect)
 
 					if(isLoggedIn){
 					   history.push(redirect)
@@ -32,7 +32,7 @@ function  Login({history, location}) {
 
 				const handleSubmit = (e) => {
 					e.preventDefault();
-					console.log(userInfo);
+					//console.log(userInfo);
 
 					dispatch(userLogin(userInfo))
 					setUser(initData);
@@ -63,7 +63,7 @@ function  Login({history, location}) {
 								name="password"
 								value={userInfo.password}
 								className="loginInput"
-								type="text"
+								type="password"
 								placeholder="password"
 								required
 								onChange={(e) => handleInputChange(e)}

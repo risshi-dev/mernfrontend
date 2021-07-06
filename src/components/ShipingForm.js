@@ -36,7 +36,7 @@ function ShipingForm({history, location}) {
 
 				const handleSubmit = (e) => {
 					e.preventDefault();
-                    console.log(user)
+                    //console.log(user)
 					dispatch(updateAddress(user))
 					history.push('/payment')
 					}

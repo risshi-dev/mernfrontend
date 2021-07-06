@@ -6,9 +6,20 @@ import { productList } from '../actions/productActions';
 import Loader from '../components/Loader';
 import AlertMess from '../components/Alert';
 import '../css/HomeScreen.css'
+import { useLocation } from 'react-router-dom';
+import { productByKey } from '../actions/productDetailsAction';
 
 function SearchScreen() {
     
+	const {search} = useLocation()
+const dispatch = useDispatch()
+
+	useEffect(() => {
+		const query = search.split('=')[1]
+
+		if(productById.length===0)
+		      dispatch(productByKey(query))
+	}, [search])
 
 	const {productById, error ,loading} = useSelector((state) => state.productDetails);
 	

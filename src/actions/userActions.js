@@ -93,7 +93,7 @@ export const userDetails = () => async (dispatch, getState) => {
  
              }
      catch(error){
-        console.log(error)
+        //console.log(error)
      }
  
  }
@@ -110,7 +110,7 @@ export const userDetails = () => async (dispatch, getState) => {
  
              }
      catch(error){
-        console.log(error)
+        //console.log(error)
      }
  
  }

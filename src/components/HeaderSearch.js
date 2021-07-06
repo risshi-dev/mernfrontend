@@ -15,20 +15,22 @@ function HeaderSearch({history}) {
 
 	const handleSearch = (e) => {
 		e.preventDefault()
-		dispatch(productByKey(key))
-		history.push(`/search?key=${key}`)
+		if(key!=='')
+		{
+			dispatch(productByKey(key))
+		    history.push(`/search?key=${key}`)
+		}
 	}
 
 
     return (
         <div><form
 									className="form-container"
-									inline
 								>
 									<input
 										className="form-input"
 										type="text"
-										placeholder="Search Products Here..."
+										placeholder="Search Products"
 										value={key}
 										onChange={(e)=> setKey(e.target.value)}
 

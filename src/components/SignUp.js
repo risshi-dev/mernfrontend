@@ -20,7 +20,7 @@ function SignUp({history, location}) {
 
 				useEffect(()=>{
 
-					console.log(redirect)
+					//console.log(redirect)
 
 					if(isLoggedIn){
 					   history.push(redirect)
