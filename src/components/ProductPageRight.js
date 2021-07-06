@@ -17,7 +17,9 @@ function ProductPageRight({product, history}) {
 	const dispatch = useDispatch()
 
 	const handleReview = (e) =>{
-		dispatch(addReview({...review, id:product._id}))
+		e.preventDefault()
+		console.log(review)
+		// dispatch(addReview({...review, id:product._id}))
 		setReview({
 			rating:"",
 			comment:""
@@ -80,7 +82,7 @@ function ProductPageRight({product, history}) {
 								required
 								onChange={(e) => setReview({...review, rating: e.target.value})}
 							>
-											{rating.map(r => <option vaule={r.value}>{r.R}</option>)}
+											{rating.map(r => <option value={r.value}>{r.R}</option>)}
 										</select>
 							
 						</div>
