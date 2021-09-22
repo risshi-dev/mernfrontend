@@ -50,7 +50,7 @@ function SignUp({history, location}) {
 								value={user.name}
 								className="loginInput"
 								type="text"
-								placeholder="name"
+								// placeholder="name"
 								required
 								onChange={(e) => handleInputChange(e)}
 							/>
@@ -63,7 +63,7 @@ function SignUp({history, location}) {
 								value={user.email}
 								className="loginInput"
 								type="email"
-								placeholder="email"
+								// placeholder="email"
 								required
 								onChange={(e) => handleInputChange(e)}
 							/>
@@ -76,7 +76,7 @@ function SignUp({history, location}) {
 								value={user.password}
 								className="loginInput"
 								type="text"
-								placeholder="password"
+								// placeholder="password"
 								required
 								onChange={(e) => handleInputChange(e)}
 							/>
@@ -89,7 +89,7 @@ function SignUp({history, location}) {
 								value={user.confirmPassword}
 								className="loginInput"
 								type="password"
-								placeholder="password"
+								// placeholder="password"
 								required
 								onChange={(e) => handleInputChange(e)}
 							/>

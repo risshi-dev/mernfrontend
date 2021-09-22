@@ -62,7 +62,7 @@ function ShipingForm({history, location}) {
 								value={user.address}
 								className="loginInput"
 								type="text"
-								placeholder="Street"
+								// placeholder="Street"
 								required
 								onChange={(e) => handleInputChange(e)}
 							/>
@@ -75,7 +75,7 @@ function ShipingForm({history, location}) {
 								value={user.city}
 								className="loginInput"
 								type="text"
-								placeholder="City"
+								// placeholder="City"
 								required
 								onChange={(e) => handleInputChange(e)}
 							/>
@@ -88,7 +88,7 @@ function ShipingForm({history, location}) {
 								value={user.state}
 								className="loginInput"
 								type="text"
-								placeholder="State"
+								// placeholder="State"
 								required
 								onChange={(e) => handleInputChange(e)}
 							/>
@@ -102,7 +102,7 @@ function ShipingForm({history, location}) {
 								className="loginInput"
 								type="number"
                                 min='0'
-								placeholder="Pincode"
+								// placeholder="Pincode"
 								required
 								onChange={(e) => handleInputChange(e)}
 							/>

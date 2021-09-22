@@ -69,7 +69,7 @@ function ProfileRight({history, location}) {
 								value={user.userName}
 								className="loginInput"
 								type="text"
-								placeholder="name"
+								// placeholder="name"
 								
 								onChange={(e) => handleInputChange(e)}
 							/>
@@ -82,7 +82,7 @@ function ProfileRight({history, location}) {
 								value={user.userEmail}
 								className="loginInput"
 								type="email"
-								placeholder="email"
+								// placeholder="email"
 								
 								onChange={(e) => handleInputChange(e)}
 							/>
@@ -95,7 +95,7 @@ function ProfileRight({history, location}) {
 								value={user.password}
 								className="loginInput"
 								type="text"
-								placeholder="password"
+								// placeholder="password"
 								
 								onChange={(e) => handleInputChange(e)}
 							/>
@@ -108,7 +108,7 @@ function ProfileRight({history, location}) {
 								value={user.confirmPassword}
 								className="loginInput"
 								type="password"
-								placeholder="password"
+								// placeholder="password"
 								
 								onChange={(e) => handleInputChange(e)}
 							/>

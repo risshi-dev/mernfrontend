@@ -42,9 +42,10 @@ function ProductPageLeft({product, match, history}) {
 											</div>
 										</div>
 									</div>
+									{product.countInStock > 0 ?
 									<div className="details-cont">
-										<div style={{ padding: "8px" }}>Quantity :</div>
-										<select
+									 <div style={{ padding: "8px" }}>Quantity :</div>
+										 <select
 											onChange={(e) => setQuantity(e.target.value)}
 											className="select-btn"
 										>
@@ -53,8 +54,11 @@ function ProductPageLeft({product, match, history}) {
 													{i+1}
 												</option>
 											))}
-										</select>
+										</select> 
 									</div>
+                                  :
+								  null    
+								}
 									<div style={{ textAlign: "center" }}>
 										<button
                                         onClick={addtoCart}
@@ -64,7 +68,7 @@ function ProductPageLeft({product, match, history}) {
 											Add to cart
 										</button>
 										</div>
-									<div style={{ textAlign: "center" }}>
+									{/* <div style={{ textAlign: "center" }}>
 										<button
                                         onClick={buyNow}
 											className="button-cont details-btn"
@@ -72,7 +76,7 @@ function ProductPageLeft({product, match, history}) {
 										>
 											Buy Now
 										</button>
-									</div>
+									</div> */}
 								</div>
 							</div>
 						</div>

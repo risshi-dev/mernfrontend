@@ -51,7 +51,7 @@ function  Login({history, location}) {
 								value={userInfo.email}
 								className="loginInput"
 								type="email"
-								placeholder="email"
+								// placeholder="email"
 								required
 								onChange={(e) => handleInputChange(e)}
 							/>
@@ -64,7 +64,7 @@ function  Login({history, location}) {
 								value={userInfo.password}
 								className="loginInput"
 								type="password"
-								placeholder="password"
+								// placeholder="password"
 								required
 								onChange={(e) => handleInputChange(e)}
 							/>

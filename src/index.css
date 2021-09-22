@@ -11,9 +11,41 @@ body {
   color:#000;
 }
 
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow:  0 0 6px rgba(0,0,0,0.3);
+	border-radius: 5px;
+	background-color: #F5F5F5;
+  height: 50px;
+}
+
+body::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+	-webkit-box-shadow:  0 0 6px rgba(0,0,0,.3);
+	background-color: #333333f0;
+  height: 50px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .padding{

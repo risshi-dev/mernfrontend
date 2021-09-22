@@ -12,7 +12,7 @@ function ProfileLeft({history, location}) {
     <div>
         <div className='headingContainer'>
         <h3 className={`heading`}>
-           Recently Viewed
+           {/* Recently Viewed */}
         </h3>
         </div>
     <div className='loginContainer' style={{margin:'1vh auto'}}>
